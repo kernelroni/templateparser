@@ -7,7 +7,7 @@ $tokenValues['name'] = "MY NAME";
 $tokenValues['company'] = "MY COMPANY";
 $tokenValues['testtoken'] = "TESTTOKEN";
 
-// sample massage body
+// sample message body
 $body = "abc {company} def {name} ijk {name} lmn {company} opq {testtoken} rst {notexists} uvw {name} xyz. ";
 echo "before parse <br />";
 echo $body . "<br>";
@@ -28,7 +28,7 @@ preg_match_all($pattern, $body, $tokens);
 				$body = str_replace($tokens[0][$key],$tokenValue,$body);
 		}
 	}
-// final massage body
+// final message body
 	
 echo "after parse <br />";
 // abc MY COMPANY def MY NAME ijk MY NAME lmn MY COMPANY opq TESTTOKEN rst uvw MY NAME xyz.
