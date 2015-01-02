@@ -1,9 +1,9 @@
 templateparser
 ==============
 
-parse token and replace its value from massage strings. 
+parse token and replace its value from massage strings. <br />
 
-example :
+example : <br />
 before parse <br />
 abc {company} def {name} ijk {name} lmn {company} opq {testtoken} rst {notexists} uvw {name} xyz. <br />
 after parse <br />
