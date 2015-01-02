@@ -1,7 +1,7 @@
 templateparser
 ==============
 
-parse token and replace its value from massage strings. <br />
+parse token and replace its value from message strings. <br />
 
 example : <br />
 before parse <br />
